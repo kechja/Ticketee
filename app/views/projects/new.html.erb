@@ -1,5 +1,15 @@
 <%= content_tag :h1, 'New Project' %>
 <%= form_for @project do |f| %>
+  <% if @project.errors.any? %>
+  <h2><%= pluralize @project.errors.count, "error" %>
+    prohibited this project fom being saved:
+  </h2>
+  <ul>
+    <% @project.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+  <% end %>
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
