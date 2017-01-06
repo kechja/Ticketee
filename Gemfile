@@ -49,3 +49,4 @@ group :test do
   gem 'capybara', '2.4'
 end
 
+gem 'rake', '< 11.0'
