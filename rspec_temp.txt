@@ -1,0 +1,152 @@
+[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Failures:
+
+  1) Users can create new tickets with valid attributes
+     [31mFailure/Error: click_link "New Ticket"[0m
+     [31mActionController::RoutingError:[0m
+     [31m  uninitialized constant TicketsController[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:261:in `const_get'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:261:in `block in constantize'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:259:in `each'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:259:in `inject'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:259:in `constantize'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/routing/route_set.rb:60:in `controller'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/routing/route_set.rb:39:in `serve'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/journey/router.rb:43:in `block in serve'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/journey/router.rb:30:in `each'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/journey/router.rb:30:in `serve'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/routing/route_set.rb:819:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/conditionalget.rb:25:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/flash.rb:260:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/cookies.rb:560:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activerecord-4.2.1/lib/active_record/query_cache.rb:36:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activerecord-4.2.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:88:in `_run_callbacks'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:776:in `_run_call_callbacks'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/rack/logger.rb:38:in `call_app'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/rack/logger.rb:20:in `block in call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/tagged_logging.rb:26:in `tagged'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/tagged_logging.rb:68:in `tagged'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/rack/logger.rb:20:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/static.rb:113:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/engine.rb:518:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/application.rb:164:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-test-0.6.3/lib/rack/test.rb:58:in `get'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/rack_test/browser.rb:60:in `process'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/rack_test/browser.rb:35:in `process_and_follow_redirects'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/rack_test/browser.rb:31:in `follow'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/rack_test/node.rb:56:in `click'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/node/element.rb:133:in `block in click'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/node/base.rb:84:in `synchronize'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/node/element.rb:133:in `click'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/node/actions.rb:27:in `click_link'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/session.rb:675:in `block (2 levels) in <class:Session>'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/dsl.rb:51:in `block (2 levels) in <module:DSL>'[0m
+     [36m# ./spec/features/creating_tickets_spec.rb:8:in `block (2 levels) in <top (required)>'[0m
+
+  2) Users can create new tickets when providing invalid attributes
+     [31mFailure/Error: click_link "New Ticket"[0m
+     [31mActionController::RoutingError:[0m
+     [31m  uninitialized constant TicketsController[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:261:in `const_get'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:261:in `block in constantize'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:259:in `each'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:259:in `inject'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/inflector/methods.rb:259:in `constantize'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/routing/route_set.rb:60:in `controller'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/routing/route_set.rb:39:in `serve'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/journey/router.rb:43:in `block in serve'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/journey/router.rb:30:in `each'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/journey/router.rb:30:in `serve'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/routing/route_set.rb:819:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/conditionalget.rb:25:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/flash.rb:260:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/cookies.rb:560:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activerecord-4.2.1/lib/active_record/query_cache.rb:36:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activerecord-4.2.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:88:in `_run_callbacks'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:776:in `_run_call_callbacks'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/rack/logger.rb:38:in `call_app'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/rack/logger.rb:20:in `block in call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/tagged_logging.rb:26:in `tagged'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/tagged_logging.rb:68:in `tagged'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/rack/logger.rb:20:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/static.rb:113:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/engine.rb:518:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/railties-4.2.1/lib/rails/application.rb:164:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/rack-test-0.6.3/lib/rack/test.rb:58:in `get'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/rack_test/browser.rb:60:in `process'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/rack_test/browser.rb:35:in `process_and_follow_redirects'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/rack_test/browser.rb:31:in `follow'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/rack_test/node.rb:56:in `click'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/node/element.rb:133:in `block in click'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/node/base.rb:84:in `synchronize'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/node/element.rb:133:in `click'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/node/actions.rb:27:in `click_link'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/session.rb:675:in `block (2 levels) in <class:Session>'[0m
+     [36m# /home/kevin/.rvm/gems/ruby-2.3.0/gems/capybara-2.4.0/lib/capybara/dsl.rb:51:in `block (2 levels) in <module:DSL>'[0m
+     [36m# ./spec/features/creating_tickets_spec.rb:8:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.54 seconds (files took 2.61 seconds to load)
+[31m9 examples, 2 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/features/creating_tickets_spec.rb:11[0m [36m# Users can create new tickets with valid attributes[0m
+[31mrspec ./spec/features/creating_tickets_spec.rb:18[0m [36m# Users can create new tickets when providing invalid attributes[0m
+
