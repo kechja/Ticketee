@@ -55,3 +55,5 @@ gem 'rake', '< 11.0'
 gem 'bootstrap-sass', '3.3'
 gem 'font-awesome-rails', '4.3'
 gem 'simple_form', '3.1.0'
+gem 'devise', '3.4.1'
+
