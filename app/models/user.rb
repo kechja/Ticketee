@@ -9,7 +9,13 @@ class User < ActiveRecord::Base
           :trackable,
           :validatable
   
+  scope :excluding_archived, lambda { where(archived_at: nil) }
+
   def to_s
     "#{email} (#{admin? ? "Admin" : "User"}) "
+  end
+
+  def archive
+    self.update(archived_at: Time.now)
   end
 end
