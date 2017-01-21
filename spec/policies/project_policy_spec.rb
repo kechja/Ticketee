@@ -6,13 +6,6 @@ describe ProjectPolicy do
 
   subject { ProjectPolicy }
 
-# My test count is off by one. Can *not* find what I missed.
-# Adding this test to keep pace with the book.
-  context "missing test" do
-    it "adds a test" do
-    end
-  end
-
   context "policy_scope" do
   
     subject { Pundit.policy_scope(user, Project) }
