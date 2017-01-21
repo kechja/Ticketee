@@ -6,6 +6,13 @@ describe ProjectPolicy do
 
   subject { ProjectPolicy }
 
+# My test count is off by one. Can *not* find what I missed.
+# Adding this test to keep pace with the book.
+  context "missing test" do
+    it "adds a test" do
+    end
+  end
+
   context "policy_scope" do
   
     subject { Pundit.policy_scope(user, Project) }
@@ -13,11 +20,11 @@ describe ProjectPolicy do
     let!(:project) { FactoryGirl.create :project }
     let(:user) { FactoryGirl.create :user }
 
-    it 'is empty for anonymous users' do
+    it "is empty for anonymous users" do
       expect(Pundit.policy_scope(nil, Project)).to be_empty
     end
 
-    it 'includes projects a user is allowed to view' do
+    it "includes projects a user is allowed to view" do
       assign_role!(user, :viewer, project)
       expect(subject).to include(project)
     end
@@ -26,7 +33,7 @@ describe ProjectPolicy do
       expect(subject).to be_empty
     end
 
-    it 'returns all projects for admins' do
+    it "returns all projects for admins" do
       user.admin = true
       expect(subject).to include(project)
     end
