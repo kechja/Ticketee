@@ -12,7 +12,7 @@ RSpec.describe TicketPolicy do
       let(:user) { nil }
 
       it { should_not permit_action :show }
-      # it { should_not permit_action :create }
+      it { should_not permit_action :create }
       # it { should_not permit_action :update }
       # it { should_not permit_action :destroy }
       # it { should_not permit_action :change_state }
@@ -23,7 +23,7 @@ RSpec.describe TicketPolicy do
       before { assign_role!(user, :viewer, project) }
 
       it { should permit_action :show }
-      # it { should_not permit_action :create }
+      it { should_not permit_action :create }
       # it { should_not permit_action :update }
       # it { should_not permit_action :destroy }
       # it { should_not permit_action :change_state }
@@ -34,7 +34,7 @@ RSpec.describe TicketPolicy do
       before { assign_role!(user, :editor, project) }
 
       it { should permit_action :show }
-      # it { should permit_action :create }
+      it { should permit_action :create }
       # it { should_not permit_action :update }
       # it { should_not permit_action :destroy }
       # it { should_not permit_action :change_state }
@@ -51,7 +51,7 @@ RSpec.describe TicketPolicy do
       before { assign_role!(user, :manager, project) }
 
       it { should permit_action :show }
-      # it { should permit_action :create }
+      it { should permit_action :create }
       # it { should permit_action :update }
       # it { should permit_action :destroy }
       # it { should permit_action :change_state }
@@ -64,7 +64,7 @@ RSpec.describe TicketPolicy do
       end
 
       it { should_not permit_action :show }
-      # it { should_not permit_action :create }
+      it { should_not permit_action :create }
       # it { should_not permit_action :update }
       # it { should_not permit_action :destroy }
       # it { should_not permit_action :change_state }
@@ -75,7 +75,7 @@ RSpec.describe TicketPolicy do
       let(:user) { FactoryGirl.create :user, :admin }
 
       it { should permit_action :show }
-      # it { should permit_action :create }
+      it { should permit_action :create }
       # it { should permit_action :update }
       # it { should permit_action :destroy }
       # it { should permit_action :change_state }

@@ -15,7 +15,8 @@ class ApplicationPolicy
   end
 
   def create?
-    false
+    user.try(:admin?) || record.project.has_manager?(user) ||
+     record.project.has_editor?(user)
   end
 
   def new?
