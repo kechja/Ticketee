@@ -53,12 +53,13 @@ private
     @project = Project.find(params[:project_id])
   end
 
-  def ticket_params
-    params.require(:ticket).permit(:name, :description, :attachment)
-  end
-
   def set_ticket
     @ticket = @project.tickets.find(params[:id])  
+  end
+
+  def ticket_params
+    params.require(:ticket).permit(:name, :description, :attachment,
+                                   :attachment_cache)
   end
 
 end
