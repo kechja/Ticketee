@@ -1,0 +1,26 @@
+<header>
+  <h1>States</h1>
+
+  <ul class="actions">
+    <li><%= link_to "New State", new_admin_state_path, class: "new" %></li>
+  </ul>
+</header>
+
+<ul id="states">
+  <% @states.each do |state| %>
+    <li> <%= render "states/state", state: state %> </li>
+  <% end %>
+</ul>
+
+<%# <ul id="states"> %>
+<%#   <% @states.each do |state| %1> %>
+<%#   <li> %>
+<%#     <%= render "states/state", state: state %1> %>
+<%#     <% if state.default? %1> %>
+<%#       (Default) %>
+<%#     <% else %1> %>
+<%#       <%= link_to "Make Default", make_default_admin_state_path(state) %1> %>
+<%#     <% end %1> %>
+<%#   </li> %>
+<%#   <% end %1> %>
+<%# </ul> %>
