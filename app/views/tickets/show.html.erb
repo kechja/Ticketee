@@ -48,20 +48,20 @@
     </div>
   <% end %>
 
-  <%# <header> %>
-  <%#   <h3>Comments</h3> %>
-  <%# </header> %>
+  <header>
+    <h3>Comments</h3>
+  </header>
 
-  <%# <div id="comments"> %>
-  <%#   <% if @ticket.comments.select(&:persisted?).any? %1> %>
-  <%#     <%= render @ticket.comments.select(&:persisted?) %1> %>
-  <%#   <% else %1> %>
-  <%#     <p>There are no comments for this ticket.</p> %>
-  <%#   <% end %1> %>
-  <%# </div> %>
+  <div id="comments">
+    <% if @ticket.comments.select(&:persisted?).any? %>
+      <%= render @ticket.comments.select(&:persisted?) %>
+    <% else %>
+      <p>There are no comments for this ticket.</p>
+    <% end %>
+  </div>
 
-  <%# <% if policy(@comment).create? %1> %>
-  <%#   <%= render "comments/form", ticket: @ticket, comment: @comment %1> %>
-  <%# <% end %1> %>
+  <% if policy(@comment).create? %>
+    <%= render "comments/form", ticket: @ticket, comment: @comment %>
+  <% end %>
 
 </div>
