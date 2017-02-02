@@ -4,6 +4,12 @@
 
 <%= simple_form_for [ticket, comment] do |f| %>
   <%= f.input :text %>
-  <%= f.association :state %>
+  <% if policy(ticket).change_state? %>
+    <%= f.association :state %>
+  <% end %>
+  <%# <% if policy(ticket).tag? %1> %>
+  <%#   <%= render "tags/form", f: f %1> %>
+  <%# <% end %1> %>
+
   <%= f.submit class: "btn btn-primary" %>
 <% end %>
