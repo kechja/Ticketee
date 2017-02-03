@@ -18,10 +18,10 @@ class Ticket < ActiveRecord::Base
   before_create :assign_default_state
   # after_create :author_watches_me
 
-  # searcher do
-  #   label :tag, from: :tags, field: "name"
-  #   label :state, from: :state, field: "name"
-  # end
+  searcher do
+    label :tag, from: :tags, field: "name"
+    label :state, from: :state, field: "name"
+  end
 
   def tag_names=(names)
     @tag_names = names
