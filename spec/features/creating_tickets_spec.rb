@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Users can create new tickets" do
-
+  let!(:state) { FactoryGirl.create :state, name: "New", default: true }
   let(:user) { FactoryGirl.create(:user)  }
   
   before do
@@ -13,10 +13,12 @@ RSpec.feature "Users can create new tickets" do
   end
 
   scenario "with valid attributes" do
-    fill_in "Name", with: "Non-standards compliance" 
-    fill_in "Description", with: "My pages are ugly!" 
+    fill_in "Name", with: "Non-standards compliance"
+    fill_in "Description", with: "My pages are ugly!"
     click_button "Create Ticket"
+
     expect(page).to have_content "Ticket has been created."
+    expect(page).to have_content "State: New"
     within("#ticket") do
       expect(page).to have_content "Author: #{user.email}"
     end
