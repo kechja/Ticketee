@@ -35,12 +35,12 @@
         <td><%= render @ticket.state %></td>
       </tr>
     <% end %>
-    <%# <% if @ticket.tags.any? %1> %>
-    <%#   <tr id="tags"> %>
-    <%#     <th>Tags:</th> %>
-    <%#     <td><%= render @ticket.tags, ticket: @ticket %1></td> %>
-    <%#   </tr> %>
-    <%# <% end %1> %>
+    <% if @ticket.tags.any? %>
+      <tr id="tags">
+        <th>Tags:</th>
+        <td><%= render @ticket.tags, ticket: @ticket %></td>
+      </tr>
+    <% end %>
     <%# <tr id="watchers"> %>
     <%#   <th>Watchers:</th> %>
     <%#   <td> %>

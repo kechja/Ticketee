@@ -62,6 +62,7 @@ private
   def ticket_params
     params.require(:ticket).permit( :name, 
                                     :description, 
+                                    :tag_names,
                                     :attachments_attributes =>
                                       [:file, :file_cache])
   end
