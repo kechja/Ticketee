@@ -63,3 +63,4 @@ gem 'pundit', '0.3.0'
 
 gem 'carrierwave', '0.10.0'
 gem 'searcher', github: 'radar/searcher'
+gem 'rails_12factor', group :production
